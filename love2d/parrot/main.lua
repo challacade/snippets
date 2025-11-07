@@ -5,11 +5,11 @@ function love.load()
     }
 
     player = {
-        x = 500,
+        x = 400,
         y = 300,
         speed = 5,
         sprite = sprites.parrot,
-        scale = 1.0
+        scale = 1.5
     }
 end
 
