@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="16" height="9" tilewidth="128" tileheight="128" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" name="tiles" tilewidth="128" tileheight="128" tilecount="30" columns="10">
+  <image source="tiles.png" width="1280" height="384"/>
+  <wangsets>
+   <wangset name="ground" type="corner" tile="-1">
+    <wangcolor name="grass" color="#ff0000" tile="-1" probability="1"/>
+    <wangtile tileid="0" wangid="0,0,0,1,0,0,0,0"/>
+    <wangtile tileid="1" wangid="0,0,0,1,0,1,0,0"/>
+    <wangtile tileid="2" wangid="0,0,0,0,0,1,0,0"/>
+    <wangtile tileid="3" wangid="0,1,0,0,0,1,0,1"/>
+    <wangtile tileid="4" wangid="0,1,0,1,0,0,0,1"/>
+    <wangtile tileid="10" wangid="0,1,0,1,0,0,0,0"/>
+    <wangtile tileid="11" wangid="0,1,0,1,0,1,0,1"/>
+    <wangtile tileid="12" wangid="0,0,0,0,0,1,0,1"/>
+    <wangtile tileid="13" wangid="0,0,0,1,0,1,0,1"/>
+    <wangtile tileid="14" wangid="0,1,0,1,0,1,0,0"/>
+    <wangtile tileid="40" wangid="0,1,0,0,0,0,0,0"/>
+    <wangtile tileid="41" wangid="0,1,0,0,0,0,0,1"/>
+    <wangtile tileid="42" wangid="0,0,0,0,0,0,0,1"/>
+   </wangset>
+  </wangsets>
+ </tileset>
+ <layer id="1" name="Tile Layer 1" width="16" height="9">
+  <data encoding="csv">
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,
+17,17,17,17,17,17,17,17,17,17,17,17,17,17,17,17
+</data>
+ </layer>
+ <layer id="2" name="Grass" width="16" height="9">
+  <data encoding="csv">
+0,0,11,12,12,12,12,12,12,4,22,5,12,13,0,0,
+0,1,15,12,12,4,22,22,22,23,0,21,5,14,3,0,
+0,11,12,12,4,23,0,0,0,0,0,0,11,12,13,0,
+2,15,12,12,13,0,0,0,0,0,0,1,15,12,14,2,
+12,12,12,4,23,0,0,0,0,1,2,15,12,12,12,12,
+12,12,12,13,0,0,0,0,0,11,12,12,12,12,12,12,
+22,22,5,14,3,0,0,1,2,15,12,4,22,5,12,12,
+0,0,21,5,14,2,2,15,12,12,4,23,0,21,22,5,
+0,0,0,11,12,12,12,12,12,12,13,0,0,0,0,11
+</data>
+ </layer>
+</map>
