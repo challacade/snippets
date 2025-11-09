@@ -11,6 +11,9 @@ function love.load()
         sprite = sprites.parrot,
         scale = 1.5
     }
+
+    player.ox = player.sprite:getWidth() / 2
+    player.oy = player.sprite:getHeight() / 2
 end
 
 function love.update(dt)
@@ -34,8 +37,5 @@ end
 function love.draw()
     love.graphics.setColor(1, 1, 1, 1)
     love.graphics.draw(sprites.background, 0, 0)
-
-    local ox = player.sprite:getWidth() / 2
-    local oy = player.sprite:getHeight() / 2
-    love.graphics.draw(player.sprite, player.x, player.y, nil, player.scale, nil, ox, oy)
+    love.graphics.draw(player.sprite, player.x, player.y, nil, player.scale, nil, player.ox, player.oy)
 end
